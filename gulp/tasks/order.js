@@ -168,7 +168,7 @@ gulp.task('order', ["prepare-order"], function () {
       }
 
       // decide directory
-      console.log(relPath + "--->" + path.dirname);
+      //console.log(relPath + "--->" + path.dirname);
       if (path.dirname.match(/\/?server\/?/)) {
         path.dirname = 'server/';
       } else if (path.dirname.match(/\/?client\/?/)) {
@@ -176,7 +176,7 @@ gulp.task('order', ["prepare-order"], function () {
       } else {
         path.dirname = '/lib/';
       }
-      console.log("decided: " + path.dirname);
+      //console.log("decided: " + path.dirname);
       //path.basename += "-goodbye";
       //path.extname = ".md"
     }))
