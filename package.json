@@ -2,6 +2,10 @@
   "name": "TypescriptMeteorBolierplate",
   "version": "1.0.0",
   "description": "Typescript boilerplate for Meteor applications",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tomitrescak/meteor-boilerplate-typescript.git"
+  },
   "scripts": {
     "test": "karma"
   },
