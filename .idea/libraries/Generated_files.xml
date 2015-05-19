@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/src/client/collections/localCollection.js" />
+        <item url="file://$PROJECT_DIR$/src/server/startup/loadFixtures.js" />
+        <item url="file://$PROJECT_DIR$/src/server/publications/tasksPublications.js" />
+        <item url="file://$PROJECT_DIR$/src/client/routes/router_config.js" />
+        <item url="file://$PROJECT_DIR$/src/client/conf/config.js" />
+        <item url="file://$PROJECT_DIR$/src/client/routes/router_anonymous.js" />
+        <item url="file://$PROJECT_DIR$/src/lib/config/config.js" />
+        <item url="file://$PROJECT_DIR$/src/lib/models/taskModel.js" />
+        <item url="file://$PROJECT_DIR$/src/collections/tasks.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/client/collections/localCollection.js" />
+      <root url="file://$PROJECT_DIR$/src/server/startup/loadFixtures.js" />
+      <root url="file://$PROJECT_DIR$/src/server/publications/tasksPublications.js" />
+      <root url="file://$PROJECT_DIR$/src/client/routes/router_config.js" />
+      <root url="file://$PROJECT_DIR$/src/client/conf/config.js" />
+      <root url="file://$PROJECT_DIR$/src/client/routes/router_anonymous.js" />
+      <root url="file://$PROJECT_DIR$/src/lib/config/config.js" />
+      <root url="file://$PROJECT_DIR$/src/lib/models/taskModel.js" />
+      <root url="file://$PROJECT_DIR$/src/collections/tasks.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

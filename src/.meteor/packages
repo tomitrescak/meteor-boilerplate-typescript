@@ -1,0 +1,22 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+flemay:less-autoprefixer
+multiply:iron-router-progress
+iron:router
+meteorhacks:subs-manager
+meteorhacks:fast-render
+accounts-base
+module:exports
+alanning:roles
+useraccounts:semantic-ui
+accounts-password
+semantic:ui
+msgfmt:core
+msgfmt:ui
+msgfmt:extract
+dataflows:typescript-utils@0.1.4

@@ -1,9 +1,9 @@
 # Meteor Boilerplate for Typescript Projects
 
 * Thanks to [https://github.com/dataflows/meteor-typescript-utils](https://github.com/dataflows/meteor-typescript-utils)
-* Ready to go typescript solution
-* Full support for Typescript 1.5 
-* Unit testing with karma!
+* Ready to go typescript solution!
+* Full support for Typescript 1.5!
+* Unit testing with karma directly in Webstorm!
 * Typescript modules!
 
 # Quickstart
@@ -90,7 +90,6 @@ Just click on *Run Configurations* -> *add* -> *Karma*.
 
 You can install karma cli if you plan to run karma tests in terminal`sudo npm install -g karma-cli`. 
 You can now simply run `karma start`.
-
 
 ## License
 This project is provided on the MIT license.

@@ -1,0 +1,1 @@
+declare function marked(text : string) : string;
