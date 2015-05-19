@@ -4,5 +4,5 @@
 Meteor.startup(() => {
 	if (MyModule.Collections.Tasks.find().count()) {
 		console.log("Insert fixtures");
-	}	
+	}
 });

@@ -9,15 +9,23 @@ require("./gulp/tasks/tests.js");
 require("./gulp/tasks/clean.js");
 require("./gulp/tasks/meteor.js");
 require("./gulp/tasks/modularize.js");
+require("./gulp/tasks/order.js");
 
 var src = config.src;
 
-gulp.task("build", ["clean", "ts"], run(["order"]));
-gulp.task("lint", ["tslint"]);
+gulp.task("order-and-modularize", ["order"], run(["modularize"]));
+
+gulp.task("build", ["clean", "tslint"], run(["ts"]));
+gulp.task("build-debug-modules", ["clean", "ts-modules-debug"], run(["order-and-modularize"]));
+gulp.task("build-release-modules", ["clean", "ts-modules-release"], run(["modularize"]));
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
   gulp.watch([config.src + "/**/*.ts"], ['build']);
+});
+
+gulp.task('watch-modules', function() {
+  gulp.watch([config.src + "/**/*.ts"], ['build-debug-modules']);
 });
 
 //gulp.task("make", ["tslint", "clean"], run(["ts", "ts-tests"]));

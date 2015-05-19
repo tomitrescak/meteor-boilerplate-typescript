@@ -7,7 +7,7 @@
     ],
     "tasks": [
         {
-            "taskName": "build",
+            "taskName": "build-debug-modules",
             "args": [],
             "isBuildCommand": true,
             "problemMatcher": [

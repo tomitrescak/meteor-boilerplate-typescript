@@ -5,6 +5,5 @@ module MyModule.Collections {
 		name: string;
 	}
 	
-	export var Tasks : Mongo.Collection<TasksDAO>;
-	Tasks = new Mongo.Collection<TasksDAO>("tasks");
+	export var Tasks : Mongo.Collection<TasksDAO> = new Mongo.Collection<TasksDAO>("tasks");
 }

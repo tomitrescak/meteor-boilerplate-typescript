@@ -3,7 +3,7 @@
 module MyModule {
 	export class Bar  {
 		constructor() {
-			console.log("FOOOO");
+			console.log("FOOOOO");
 		}
 	}
 }
