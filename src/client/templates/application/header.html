@@ -1,0 +1,31 @@
+<template name="header">
+    <div class="ui inverted blue menu topMenu">
+        <a class="header item" href="/"><i class="icon bug"></i>{{mf 'trans_string' 'This string is translatable'}}</a>
+        <div class="right menu">
+            {{> atNavButton}}
+        </div>
+        <div class="right menu">
+            <div class="ui mobile dropdown link item">
+                {{mf 'menu' 'Menu'}}
+                <i class="caret down icon"></i>
+
+                <div class="menu">
+                    <a class="item" href="{{ pathFor 'home' }}">{{mf 'item1' 'Item 1'}} 1</a>
+					<a class="item" href="{{ pathFor 'home' }}">{{mf 'item2' 'Item 2'}} 2</a>
+                </div>
+            </div>
+<!--            {{#if currentUser}}
+                {{> userView}}
+            {{/if}}-->
+        </div>
+        
+        {{#if isInRole 'admin'}}
+            <a class="item" href="{{ pathFor 'home' }}">Admin</a>
+        {{/if}} 
+                 
+        
+        <a class="item" href="{{ pathFor 'home' }}">Item 1</a>
+		<a class="item" href="{{ pathFor 'home' }}">Item 2</a>
+       
+    </div>
+</template>

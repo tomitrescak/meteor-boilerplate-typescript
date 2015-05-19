@@ -1,0 +1,17 @@
+<template name="basic">
+    <main id="home">
+        <div class="content">
+            <div class="ui inverted masthead segment" style="border-radius: 0">
+                <div class="ui page grid">
+                    <div class="column">
+                        {{> header }}
+                        {{> yield }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            {{> footer }}
+        </footer>
+    </main>
+</template>

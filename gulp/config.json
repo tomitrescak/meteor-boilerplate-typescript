@@ -1,0 +1,7 @@
+{
+  "src": "./src/",
+  "destination": "./.tmp",
+  "finalDestination": "./src/js",
+  "testsTimeLimitMs": 5000,
+  "modules": ["MyModule"]
+}

@@ -1,0 +1,8 @@
+.tmp
+node_modules
+.custom.semantic.json
+semantic.less
+theme.import.less
+src/client/lib/semanticui/definitions
+src/client/lib/semanticui/themes
+src/js

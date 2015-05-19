@@ -1,0 +1,41 @@
+{
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+    "args": [
+        
+    ],
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": [],
+            "isBuildCommand": true,
+            "problemMatcher": [
+                {
+                    "owner": "gulp",
+                    "fileLocation": ["absolute"],
+                    "pattern": {
+                        "regexp": "^\\[[^>]* > ([^(]*)\\((\\d*),(\\d*)\\): (error) (.*)$",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "severity": 4,
+                        "message": 5
+                    }
+                },
+                {
+                    "owner": "gulp",
+                    "fileLocation": ["relative", "${workspaceRoot}/src/"],
+                    "pattern": {
+                        "regexp": "\\([a-z\\-]*\\) ([^\\[]*)\\[([\\d]*), ([\\d]*)\\]: (.*)",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "severity": 1,
+                        "message": 4
+                    }
+                }
+            ]
+        }
+    ]
+}

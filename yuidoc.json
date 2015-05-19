@@ -1,0 +1,10 @@
+{
+  "name": "Hugo's World",
+  "description": "The application that teaches you problem solving in a coolest manner!",
+  "version": "0.0.1",
+  "url": "http://example.com/",
+  "options": {
+    "outdir": "./private/docs",
+    "exclude": ".meteor"
+  }
+}
