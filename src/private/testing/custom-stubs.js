@@ -1,0 +1,5 @@
+MyModule = {};
+
+msgfmt = {
+	init: function() {} 
+};

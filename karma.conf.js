@@ -15,12 +15,11 @@ module.exports = function(config) {
     files: [
       {pattern: "**/*.ts", watched: false, included: false, served: true},
       {pattern: "**/*.js.map", watched: false, included: false, served: true},
-      'src/private/testing/underscore/underscore-min.js',
+      'src/private/testing/underscore-min.js',
       'src/private/testing/meteor-stubs.js',
-      'src/private/testing/hugo-stubs.js',
-      'src/tests/**/custom-stubs.js',
+      'src/private/testing/custom-stubs.js',
       'src/js/lib/**/*.js',
-      'src/js/models/**/*.js',
+      'src/js/server/**/*.js',
       'src/js/tests/jasmine/server/**/*Spec.js'
     ],
 

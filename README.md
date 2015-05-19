@@ -3,11 +3,13 @@
 * Thanks to [https://github.com/dataflows/meteor-typescript-utils](https://github.com/dataflows/meteor-typescript-utils)
 * Ready to go typescript solution
 * Full support for Typescript 1.5 
+* Unit testing with karma!
 * Typescript modules!
 
 # Quickstart
 
 1. Clone this repository 
+1. Run `npm install` in the main directory
 1. Add your files (see section *Files*).
 1. If you want to use modules use `build-debug-modules` or `build-release-modules` gulp task (see section *Modules*).
 1. If you do not want modules use `build` gulp taks.
@@ -77,8 +79,18 @@ You can control which components are used in '/src/client/lib/semanticui/custom.
 * `meteorhacks:subs-manager` - Subscription manager to save traffic
 * `meteorhacks:fast-render` - Blazing fast page load, no more waiting
 * `alanning:roles` - Roles management
+* `dataflows:typescript-utils` - Typescript goodies
 
 We leave the rest of the packages up to you, not to annoy you too much.
+
+# Karma
+
+This project has been configured to run with Karma (e.g. in Webstorm) for super fast unit testing.
+Just click on *Run Configurations* -> *add* -> *Karma*.
+
+You can install karma cli if you plan to run karma tests in terminal`sudo npm install -g karma-cli`. 
+You can now simply run `karma start`.
+
 
 ## License
 This project is provided on the MIT license.

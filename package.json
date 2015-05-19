@@ -20,12 +20,11 @@
     "gulp-util": "~2.2.19",
     "jasmine-core": "^2.3.4",
     "karma": "^0.12.31",
-    "karma-chrome-launcher": "^0.1.12",
     "karma-jasmine": "^0.3.5",
-    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-chrome-launcher": "^0.1.12",
     "lodash": "3.2.0",
     "run-sequence": "^0.3.6",
-    "typescript": "^1.5.0-alpha",
+    "typescript": "^1.5.0-beta",
     "vinyl-map": "^1.0.1"
   }
 }

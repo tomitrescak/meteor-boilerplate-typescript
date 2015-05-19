@@ -3,10 +3,8 @@
 Router.route("/", {
   name: "home",
   template: "Home",
-  data: function() {
-    //return result;
-  },
-  yieldRegions: {
-    "FooterHome": {to: "extraFooter"}
+  data: () => {
+    return { tasks: MyModule.Collections.Tasks.find() };
   }
 });
+

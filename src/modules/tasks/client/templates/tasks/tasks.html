@@ -1,0 +1,32 @@
+<template name="Tasks">
+	<div class="ui top attached segment">
+		<h2 class="ui header">
+			<i class="calendar icon"></i>
+			<div class="content">
+				<a href="{{ pathFor 'tasks' }}">Tasks</a>
+				<div class="sub header">List of active tasks</div>
+			</div>
+		</h2>
+	</div>
+	<div class="ui attached segment">
+		<div class="ui divided list">
+			{{#each tasks}}
+			<div class="item">
+				{{#if isOwner}}
+					<div class="right floated compact ui button">Modify</div>
+				{{/if}}
+				<div class="header">{{name}}</div>
+				{{description}}
+			</div>
+			{{/each}}
+		</div>
+	</div>
+	{{#if currentUser}}
+		<div class="ui bottom attached segment">
+			<div class="right floated primary icon labeled ui button">
+				<i class="icon plus"></i>
+				Add
+			</div>
+		</div>
+	{{/if}}
+</template>

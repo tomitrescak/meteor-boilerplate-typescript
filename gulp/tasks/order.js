@@ -147,6 +147,11 @@ gulp.task('order', ["prepare-order"], function () {
 
   return gulp.src([config.tmp + "/**/*.js"])
     .pipe(rename(function (path) {
+      // we do not rename test files
+      if (path.dirname == "tests" || path.dirname.indexOf('tests') > -1) {
+        return;
+      }
+      
       var relPath = path.dirname + "/" + path.basename + path.extname;
 
       // find this path in linked list
@@ -163,16 +168,15 @@ gulp.task('order', ["prepare-order"], function () {
       }
 
       // decide directory
-      if (path.dirname.indexOf('lib/') > -1) {
-        path.dirname = '/lib/';
-      } else if (path.dirname.indexOf('server/') > -1) {
+      console.log(relPath + "--->" + path.dirname);
+      if (path.dirname.match(/\/?server\/?/)) {
         path.dirname = 'server/';
-      } else if (path.dirname.indexOf('client/') > -1) {
+      } else if (path.dirname.match(/\/?client\/?/)) {
         path.dirname = 'client/';
       } else {
         path.dirname = '/lib/';
       }
-      //console.log(path.basename);
+      console.log("decided: " + path.dirname);
       //path.basename += "-goodbye";
       //path.extname = ".md"
     }))
