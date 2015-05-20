@@ -1,0 +1,31 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": [".idea", ".settings", ".tmp", "node_modules"],
+		}
+	],
+	"build_systems":
+	[
+
+		{
+			"name": "Build",
+			"cmd": ["gulp", "build-debug-modules"],
+			"working_dir": "${project_path}/src",
+			"file_regex": "^\\[\\d\\d?:\\d\\d?:\\d\\d?\\] \\[tsc\\] > ([^(]*)\\((\\d*),(\\d*)\\): (error) (.*)$",
+		},
+        { 
+        	"name": "Lint",
+        	"working_dir": "${project_path}/src/",
+          	"cmd": ["gulp", "tslint"],
+          	"file_regex": "^\\([a-z\\-]*\\) ([^\\[]*)\\[([\\d]*), ([\\d]*)\\]: (.*)$"
+        },
+        {
+	        "name": "Karma Test",
+	        "working_dir": "${project_path:${folder}}",
+	        "cmd": ["karma", "start", "--no-colors"],
+	        "working_dir": "${project_path:${folder}"
+	    }
+	]
+}
