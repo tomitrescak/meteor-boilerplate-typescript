@@ -57,7 +57,7 @@ gulp.task('find-dependencies', function() {
 
 gulp.task('order', ['find-dependencies'], function() {
   // browse the files collection and resolve all dependencies
-  console.log(files.length);
+//  console.log(files.length);
   var resolved;
 
   for (var i in files) {
@@ -96,7 +96,7 @@ gulp.task('order', ['find-dependencies'], function() {
 
       for (var i=0; i<sorted.length; i++) {
         if (sorted[i].name.indexOf(relPath) > -1) {
-          console.log("Indexing: " + i + " " + relPath);
+//          console.log("Indexing: " + i + " " + relPath);
           path.basename = createPad(files, i) + "_" + path.basename;
           break;
         }
@@ -168,7 +168,7 @@ function createPad(files, index) {
       rest = Math.floor(rest / elems);
       pad += padCharacters[0];
     }
-    console.log("Pad: " + pad);
+//    console.log("Pad: " + pad);
   }
 
   // convert to character
