@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28d0e31e-a202-478c-b92a-ff4414de1aa2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/tasks/client/templates/list_templates/list_templates.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/tasks/server/methods.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/tasks/client/router_tasks.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/modules/tasks/client/style_tasks.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/private/tasksFixtures.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/templates/layouts/basic.html" afterPath="$PROJECT_DIR$/src/client/templates/layouts/basic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/templates/home/home.html" afterPath="$PROJECT_DIR$/src/client/templates/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/routes/router_anonymous.ts" afterPath="$PROJECT_DIR$/src/client/routes/router_anonymous.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/stylesheets/site.css" afterPath="$PROJECT_DIR$/src/client/stylesheets/site.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="typescript-boilerplate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +26,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/templates/home/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -44,7 +36,7 @@
       <file leaf-file-name="basic.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/templates/layouts/basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding />
             </state>
@@ -65,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/client/routes/router_config.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,8 +67,10 @@
         <entry file="file://$PROJECT_DIR$/src/client/routes/router_anonymous.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding />
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+              <folding>
+                <marker date="1432051026000" expanded="true" signature="113:119" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,41 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_templates.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/tasks/client/templates/list_templates/list_templates.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="router_tasks.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/tasks/client/router_tasks.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style_tasks.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/tasks/client/style_tasks.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="loadFixtures.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server/startup/loadFixtures.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15177065">
-              <caret line="6" column="3" selection-start-line="4" selection-start-column="2" selection-end-line="6" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.42525774">
+              <caret line="11" column="3" selection-start-line="4" selection-start-column="2" selection-end-line="11" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -161,7 +125,6 @@
         <option value="$PROJECT_DIR$/gulp/tasks/ts.js" />
         <option value="$PROJECT_DIR$/src/server/serverImports.d.ts" />
         <option value="$PROJECT_DIR$/src/server/publications/tasksPublications.ts" />
-        <option value="$PROJECT_DIR$/src/server/startup/loadFixtures.ts" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/gulp/tasks/modularize.js" />
         <option value="$PROJECT_DIR$/gulp/tasks/order.js" />
@@ -170,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/client/templates/layouts/basic.html" />
         <option value="$PROJECT_DIR$/src/client/stylesheets/site.css" />
         <option value="$PROJECT_DIR$/src/client/routes/router_anonymous.ts" />
+        <option value="$PROJECT_DIR$/src/server/startup/loadFixtures.ts" />
       </list>
     </option>
   </component>
@@ -217,10 +181,19 @@
             <task-name>modularize</task-name>
           </GulpTaskState>
           <GulpTaskState>
+            <task-name>prepare-order</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
             <dependencies>
-              <dependency value="modularize" />
+              <dependency value="prepare-order" />
             </dependencies>
             <task-name>order</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <dependencies>
+              <dependency value="order" />
+            </dependencies>
+            <task-name>order-and-modularize</task-name>
           </GulpTaskState>
           <GulpTaskState>
             <dependencies>
@@ -239,7 +212,7 @@
           <GulpTaskState>
             <dependencies>
               <dependency value="clean" />
-              <dependency value="tslint" />
+              <dependency value="ts-modules-release" />
             </dependencies>
             <task-name>build-release-modules</task-name>
           </GulpTaskState>
@@ -293,8 +266,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -310,6 +283,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="typescript-boilerplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typescript-boilerplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typescript-boilerplate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,6 +351,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -596,26 +587,26 @@
     <frame x="0" y="23" width="1920" height="1016" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15060559" sideWeight="0.26201922" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15060559" sideWeight="0.7379808" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5507559" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5018431" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19870411" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15060559" sideWeight="0.24798712" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15060559" sideWeight="0.7520129" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937366" sideWeight="0.49815693" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19870411" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3073593" sideWeight="0.3954713" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19222462" sideWeight="0.49605057" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5018431" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937366" sideWeight="0.49815693" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3073593" sideWeight="0.3954713" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -647,7 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="37" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="37" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="37" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="37" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
@@ -825,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,39 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/0003_taskModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/client/0009_router_config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/0004_foo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/lib/0005_bar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22765599">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,29 +878,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15177065">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/private/tasksFixtures.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/templates/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/templates/layouts/basic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
         </state>
@@ -977,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,7 +922,7 @@
     <entry file="file://$PROJECT_DIR$/src/client/routes/router_config.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1008,8 +930,10 @@
     <entry file="file://$PROJECT_DIR$/src/client/routes/router_anonymous.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <marker date="1432051026000" expanded="true" signature="113:119" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,37 +945,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/tasks/client/templates/list_templates/list_templates.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/tasks/client/router_tasks.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/tasks/client/style_tasks.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/startup/loadFixtures.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15177065">
-          <caret line="6" column="3" selection-start-line="4" selection-start-column="2" selection-end-line="6" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.42525774">
+          <caret line="11" column="3" selection-start-line="4" selection-start-column="2" selection-end-line="11" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="regexState">
+    <option name="map">
+      <map>
+        <entry key="flags" value="8" />
+        <entry key="mode" value="0" />
+        <entry key="regex" value="\([a-z\-]*\) ([^\[]*)\[([\d]*), ([\d]*)\]: (.*)" />
+        <entry key="text" value="[12:03:15] Using gulpfile ~/Documents/Programming/Testing/meteor-boilerplate-typescript/gulpfile.js&#10;[12:03:15] Starting 'tslint'...&#10;(eofline) client/clientImports.d.ts[7, 79]: file should end with a newline&#10;(eofline) collections/all-collections.d.ts[1, 34]: file should end with a newline&#10;(eofline) lib/libImports.d.ts[6, 70]: file should end with a newline&#10;(eofline) modules/modulesImports.d.ts[9, 61]: file should end with a newline&#10;(eofline) server/serverImports.d.ts[3, 49]: file should end with a newline&#10;(interface-name) client/collections/localCollection.ts[3, 11]: interface name must be a capitalized I&#10;(eofline) client/conf/config.ts[6, 4]: file should end with a newline&#10;(quotemark) client/conf/config.ts[5, 20]: ' should be &quot;&#10;(eofline) lib/config/config.ts[12, 4]: file should end with a newline&#10;(no-trailing-whitespace) lib/config/config.ts[11, 4]: trailing whitespace&#10;(quotemark) lib/config/config.ts[3, 13]: ' should be &quot;&#10;(quotemark) lib/config/config.ts[10, 22]: ' should be &quot;&#10;(eofline) lib/models/all-models.d.ts[1, 38]: file should end with a newline&#10;(eofline) lib/models/bar.ts[9, 2]: file should end with a newline&#10;(eofline) lib/models/foo.ts[7, 2]: file should end with a newline&#10;(eofline) lib/models/taskModel.ts[5, 2]: file should end with a newline&#10;(eofline) server/publications/tasksPublications.ts[5, 4]: file should end with a newline&#10;(quotemark) server/publications/tasksPublications.ts[3, 16]: ' should be &quot;&#10;(no-duplicate-variable) server/startup/loadFixtures.ts[9, 22]: duplicate variable: 'records'&#10;(eofline) tests/jasmine/server/unit/testSpec.ts[11, 3]: file should end with a newline&#10;(no-trailing-whitespace) tests/jasmine/server/unit/testSpec.ts[5, 28]: trailing whitespace&#10;(no-trailing-whitespace) tests/jasmine/server/unit/testSpec.ts[7, 1]: trailing whitespace&#10;(no-trailing-whitespace) tests/jasmine/server/unit/testSpec.ts[9, 27]: trailing whitespace&#10;(quotemark) tests/jasmine/server/unit/testSpec.ts[3, 10]: ' should be &quot;&#10;(quotemark) tests/jasmine/server/unit/testSpec.ts[4, 5]: ' should be &quot;&#10;(quotemark) tests/jasmine/server/unit/testSpec.ts[8, 5]: ' should be &quot;&#10;(semicolon) tests/jasmine/server/unit/testSpec.ts[11, 3]: missing semicolon&#10;(eofline) modules/tasks/client/templates/tasks/tasks.ts[28, 2]: file should end with a newline&#10;(no-trailing-whitespace) modules/tasks/client/templates/tasks/tasks.ts[5, 1]: trailing whitespace&#10;(no-trailing-whitespace) modules/tasks/client/templates/tasks/tasks.ts[9, 1]: trailing whitespace&#10;(no-trailing-whitespace) modules/tasks/client/templates/tasks/tasks.ts[17, 1]: trailing whitespace&#10;(no-trailing-whitespace) modules/tasks/client/templates/tasks/tasks.ts[21, 7]: trailing whitespace&#10;(no-trailing-whitespace) modules/tasks/client/templates/tasks/tasks.ts[23, 1]: trailing whitespace&#10;(no-trailing-whitespace) modules/tasks/client/templates/tasks/tasks.ts[26, 1]: trailing whitespace&#10;[12:03:15] 'tslint' errored after 372 ms&#10;[12:03:15] Error in plugin 'gulp-tslint'&#10;Message:&#10;    Failed to lint: client/clientImports.d.ts[7, 79]: file should end with a newline, collections/all-collections.d.ts[1, 34]: file should end with a newline, lib/libImports.d.ts[6, 70]: file should end with a newline, modules/modulesImports.d.ts[9, 61]: file should end with a newline, server/serverImports.d.ts[3, 49]: file should end with a newline, client/collections/localCollection.ts[3, 11]: interface name must be a capitalized I, client/conf/config.ts[6, 4]: file should end with a newline, client/conf/config.ts[5, 20]: ' should be &quot;, lib/config/config.ts[12, 4]: file should end with a newline, lib/config/config.ts[11, 4]: trailing whitespace, lib/config/config.ts[3, 13]: ' should be &quot;, lib/config/config.ts[10, 22]: ' should be &quot;, lib/models/all-models.d.ts[1, 38]: file should end with a newline, lib/models/bar.ts[9, 2]: file should end with a newline, lib/models/foo.ts[7, 2]: file should end with a newline, lib/models/taskModel.ts[5, 2]: file should end with a newline, server/publications/tasksPublications.ts[5, 4]: file should end with a newline, server/publications/tasksPublications.ts[3, 16]: ' should be &quot;, server/startup/loadFixtures.ts[9, 22]: duplicate variable: 'records', tests/jasmine/server/unit/testSpec.ts[11, 3]: file should end with a newline, tests/jasmine/server/unit/testSpec.ts[5, 28]: trailing whitespace, tests/jasmine/server/unit/testSpec.ts[7, 1]: trailing whitespace, tests/jasmine/server/unit/testSpec.ts[9, 27]: trailing whitespace, tests/jasmine/server/unit/testSpec.ts[3, 10]: ' should be &quot;, tests/jasmine/server/unit/testSpec.ts[4, 5]: ' should be &quot;, tests/jasmine/server/unit/testSpec.ts[8, 5]: ' should be &quot;, tests/jasmine/server/unit/testSpec.ts[11, 3]: missing semicolon, modules/tasks/client/templates/tasks/tasks.ts[28, 2]: file should end with a newline, modules/tasks/client/templates/tasks/tasks.ts[5, 1]: trailing whitespace, modules/tasks/client/templates/tasks/tasks.ts[9, 1]: trailing whitespace, modules/tasks/client/templates/tasks/tasks.ts[17, 1]: trailing whitespace, modules/tasks/client/templates/tasks/tasks.ts[21, 7]: trailing whitespace, modules/tasks/client/templates/tasks/tasks.ts[23, 1]: trailing whitespace, modules/tasks/client/templates/tasks/tasks.ts[26, 1]: trailing whitespace.&#10;[Finished in 1.1s with exit code 1]&#10;[cmd: ['gulp', 'tslint']]&#10;[dir: /Users/tomi/Documents/Programming/Testing/meteor-boilerplate-typescript]&#10;[path: /opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin]" />
+      </map>
+    </option>
   </component>
 </project>

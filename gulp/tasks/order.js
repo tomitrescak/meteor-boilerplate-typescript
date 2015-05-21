@@ -6,144 +6,84 @@ var rename = require("gulp-rename");
 var map = require('vinyl-map')
 var path = require('path');
 
-var linkedListStart = null;
-var pad = "0000";
+var files = [];
 
-gulp.task('prepare-order', function () {
-  // create dependency list
+var pad = "";
+var padCharacters = "_abcdefghijklmnopqrstuvwxyz";
 
-  linkedListStart = null;
-  var regex = new RegExp(/^\/\/\/ <reference path="([^"]*)" \/>\W/);
+var regex = new RegExp(/^\/\/\/ <reference path="([^"]*)" \/>$/mg);
 
-  // enqueue into linked list
-  function enqueueBefore(elem, newOne, before) {
-    //console.log('B: ' +  newOne.name + " ----> " + elem.name);
+gulp.task('find-dependencies', function() {
+  // init the file collection
+  files = [];
 
-    if (!elem.previous) {
-      linkedListStart = newOne;
-    } else {
-      elem.previous.next = newOne;
-    }
-
-    newOne.previous = elem.previous;
-    elem.previous = newOne;
-    newOne.next = elem;
-  }
-
-  function enqueueAfter(elem, newOne, before) {
-    //console.log('A: '  +  elem.name + " ----> " + newOne.name);
-
-    if (elem.next) {
-      elem.next.previous = newOne;
-    }
-    newOne.next = elem.next;
-    elem.next = newOne;
-    newOne.previous = elem;
-  }
-
-  var order = map(function (code, filename) {
-
-    // file contents are handed over as buffers
-    code = code.toString();
-
-    var newElem = {
-      name: filename
-    }
-
+  /**
+   * This function will detect all dependencies and build array of elements
+   */
+  var findDependencies = map(function (code, filename) {
+    //console.log("\n\n-> " + filename);
     // match dependencies
-    var match = regex.exec(code);
+    code = code.toString();
+    var match = code.match(regex);
+    var newElem = {
+      name: filename,
+      dependencies: []
+    };
 
     // strip all dependencies
     if (match) {
       var deps = [];
 
-      for (var i = 1; i < match.length; i++) {
-        // skip definition files
-        if (match[i].indexOf(".d.ts") > -1) {
-          continue;
-        }
+      for (var i = 0; i < match.length; i++) {
+//        console.log("Match: " + match[i]);
+        var dep = (/"([^"]*)"/).exec(match[i])[1].replace(/\.+\//g, ""); //.replace(".ts", ".js")
+//        console.log("--> Dependency: " + dep);
 
         // add dependency stripped of ../ and ./
-        deps.push(match[i].replace(/\.+\//g, ""));
+        deps.push(dep);
       }
 
       if (deps.length) {
         newElem.dependencies = deps;
       }
     }
-
-    // init first element
-    if (!linkedListStart) {
-      linkedListStart = newElem;
-      return;
-    }
-
-    // start from the beggining of the linked list
-    var head = linkedListStart;
-    var found = null;
-    var foundCount = 0;
-
-    if (match) {
-      // browse the linked list until we find the latest dependency
-      // going down, finding the latest position of file which I depend on
-      while (head) {
-        for (var i in newElem.dependencies) {
-          // if we found a filename of the dependency
-          if (head.name.indexOf(newElem.dependencies[i]) > -1) {
-            found = head;
-            foundCount++;
-          }
-          // stop if we found all dependencies
-          if (foundCount == newElem.dependencies.length) {
-            break;
-          }
-        }
-        head = head.next;
-      }
-    }
-
-
-    // we may have not found anything
-    if (!found) {
-      found = linkedListStart;
-    }
-
-    // if there are elements below the current element
-    // we go further down, finding the topmost position of file which depends on me
-    if (found.next) {
-      found = found.next;
-      head = found;
-
-      while (head) {
-        for (var i in head.dependencies) {
-          // if we found a filename of the dependency
-          if (newElem.name.indexOf(head.dependencies[i]) > -1) {
-            found = head;
-          }
-        }
-        head = head.next;
-      }
-
-      // insert before the last found element
-      enqueueBefore(found, newElem);
-
-    } else {
-      // if this is a last element only add content afterwards
-      enqueueAfter(found, newElem);
-    }
-
-    // insert element before the currently found element
-    //    console.log(fileName);
-    //return { file: fileName };
+    files.push(newElem);
   });
 
-  return gulp.src([config.tmp + "/**/*.js"])
-    .pipe(order);
+  return gulp.src([config.src + "/**/*.ts"])
+    .pipe(findDependencies);
 
 });
 
-gulp.task('order', ["prepare-order"], function () {
+gulp.task('order', ['find-dependencies'], function() {
+  // browse the files collection and resolve all dependencies
+  console.log(files.length);
+  var resolved;
 
+  for (var i in files) {
+    var file = files[i];
+
+    for (var j=0; j<file.dependencies.length; j++) {
+      var dependency = file.dependencies[j];
+
+      resolved = false;
+      for (var k in files) {
+        if (files[k].name.indexOf(dependency) > -1) {
+          file.dependencies[j] = files[k];
+  //        console.log("resolved: " + files[k]);
+          resolved = true;
+        }
+      }
+      if (!resolved) {
+        file.dependencies.splice(j, 1);
+        j--;
+  //      console.log("not resolved: " + dependency);
+      }
+    }
+  }
+
+  // topologically sort files by hierarchy
+  var sorted = TSort(files, true);
 
   return gulp.src([config.tmp + "/**/*.js"])
     .pipe(rename(function (path) {
@@ -152,27 +92,31 @@ gulp.task('order', ["prepare-order"], function () {
         return;
       }
       
-      var relPath = path.dirname + "/" + path.basename + path.extname;
+      var relPath = path.dirname + "/" + path.basename;
 
-      // find this path in linked list
-      var i = 0;
-      var head = linkedListStart;
-
-      while (head != null) {
-        //console.log(i + " " + head.name + "::" + relPath);
-        if (head.name.indexOf(relPath) > -1) {
-          path.basename = pad.substring(0, pad.length - i.toString().length) + i.toString() + "_" + path.basename;
+      for (var i=0; i<sorted.length; i++) {
+        if (sorted[i].name.indexOf(relPath) > -1) {
+          console.log("Indexing: " + i + " " + relPath);
+          path.basename = createPad(files, i) + "_" + path.basename;
+          break;
         }
-        i++;
-        head = head.next;
       }
 
       // decide directory
       //console.log(relPath + "--->" + path.dirname);
       if (path.dirname.match(/\/?server\/?/)) {
-        path.dirname = 'server/';
+        
+        if (path.dirname.match(/\/?lib\/?/)) {
+          path.dirname = 'server/lib/';
+        } else {
+          path.dirname = 'server/';
+        }
       } else if (path.dirname.match(/\/?client\/?/)) {
-        path.dirname = 'client/';
+        if (path.dirname.match(/\/?lib\/?/)) {
+          path.dirname = 'client/lib/';
+        } else {
+          path.dirname = 'client/';
+        }       
       } else {
         path.dirname = '/lib/';
       }
@@ -183,3 +127,59 @@ gulp.task('order', ["prepare-order"], function () {
     .pipe(gulp.dest(config.destination));
 })
 
+
+
+function TSort(source, throwOnCycle)
+{
+  var sorted = [];
+  var visited = [];
+
+  for( var i in source )
+    Visit( source[i], visited, sorted, throwOnCycle );
+
+  return sorted;
+}
+
+function Visit(item, visited, sorted, throwOnCycle )
+{
+  if(visited.indexOf(item) == -1)
+  {
+    visited.push(item);
+
+    for( var i in item.dependencies) {
+      Visit(item.dependencies[i], visited, sorted, throwOnCycle);
+    }
+
+    sorted.push(item );
+  }
+  else
+  {
+    if( throwOnCycle && sorted.indexOf(item) == -1)
+      console.log( "Cyclic dependency found: " + item.name );
+  }
+}
+
+function createPad(files, index) {
+  var elems = padCharacters.length;
+  if (!pad) {
+    pad = padCharacters[0];
+    var rest = files.length;
+    while (rest > elems) {
+      rest = Math.floor(rest / elems);
+      pad += padCharacters[0];
+    }
+    console.log("Pad: " + pad);
+  }
+
+  // convert to character
+  var num = index;
+  var conv = "";
+
+  do {
+    conv = padCharacters[num % elems] + conv;
+    num = Math.floor(num / elems);
+  } while (num > 0);
+
+  // return padded
+  return pad.substring(0, pad.length - conv.length) + conv;
+}
