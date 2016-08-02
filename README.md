@@ -1,3 +1,7 @@
+
+# !!! DEPRECATED - NO LONGER MAINTAINED
+
+
 # Meteor Boilerplate for Typescript Projects
 
 * Thanks to [https://github.com/dataflows/meteor-typescript-utils](https://github.com/dataflows/meteor-typescript-utils)
